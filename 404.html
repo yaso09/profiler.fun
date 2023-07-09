@@ -10,13 +10,13 @@
 <body>
     <script>
         //document.body.onload = function () {
+            var url = window.location.href;
+            var cleanUrl = url.split('?')[0];
             let win = window.open("https://api.shrtco.de/v2/info?code=" + 
             window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", ""), null, "popup");
             let doc = win.document;
             let res = doc.body.innerHTML;
-            if (res.ok = "true" || res.result.url.replace(
-                res.result.url.split("?")[0], ""
-            ) === cleanUrl) {
+            if (res.ok = "true" || res.result.url.search(cleanUrl) > 0) {
                 window.location.href = res.result.url;
             } else window.location.href = cleanUrl;
             win.close();

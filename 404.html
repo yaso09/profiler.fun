@@ -12,8 +12,8 @@
         //document.body.onload = function () {
             fetch("https://api.shrtco.de/v2/info?code=" + 
             window.location.href.substring(window.location.href.lastIndexOf("/") + "").replace("/", ""))
-                .then(dat => dat.text())
-                .then(text => {
+                .then(response => dat.json())
+                .then(data => {
                     if (text.ok = "true" || text.result.utl.search(cleanUrl) > 0) {
                         window.location.href = text.result.url;
                     } else window.location.href = cleanUrl;

@@ -9,17 +9,18 @@
 </head>
 <body>
     <script>
-        document.body.onload = function () {
-            let win = window.open("https://shrtco.de/info?code=" + 
-            window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", ""));
+        //document.body.onload = function () {
+            let win = window.open("https://api.shrtco.de/v2/info?code=" + 
+            window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", ""), null, "popup");
             let doc = win.document;
             let res = doc.body.innerHTML;
             if (res.ok = "true" || res.result.url.replace(
                 res.result.url.split("?")[0], ""
             ) === cleanUrl) {
-                window.location.href = res.result.url;
+                console.log(res.result.url);
             } else window.location.href = cleanUrl;
-        }
+            win.close();
+        //}
     </script>
 </body>
 </html>

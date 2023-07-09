@@ -14,9 +14,8 @@
             window.location.href.substring(window.location.href.lastIndexOf("/") + "").replace("/", ""))
                 .then(dat => dat.text())
                 .then(text => {
-                    let res = text;
-                    if (res.ok = "true" || res.result.utl.search(cleanUrl) > 0) {
-                        window.location.href = res.result.url;
+                    if (text.ok = "true" || text.result.utl.search(cleanUrl) > 0) {
+                        window.location.href = text.result.url;
                     } else window.location.href = cleanUrl;
                 })
         //}

@@ -10,6 +10,8 @@
 <body>
     <script>
         //document.body.onload = function () {
+            var url = window.location.href;
+            var cleanUrl = url.split('?')[0];
             fetch("https://api.shrtco.de/v2/info?code=" + 
             window.location.href.substring(window.location.href.lastIndexOf("/") + "").replace("/", ""))
                 .then(response => response.json())

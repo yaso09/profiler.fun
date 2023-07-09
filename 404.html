@@ -17,7 +17,7 @@
             if (res.ok = "true" || res.result.url.replace(
                 res.result.url.split("?")[0], ""
             ) === cleanUrl) {
-                console.log(res.result.url);
+                window.location.href = res.result.url;
             } else window.location.href = cleanUrl;
             win.close();
         //}

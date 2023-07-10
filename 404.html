@@ -8,12 +8,18 @@
     <title>Profiler</title>
 </head>
 <body>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <md-block id="document"></md-block>
     <script>
         //document.body.onload = function () {
             let getURL = "https://shrtco.de/" +
             window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", "");
             if (getURL = "belgeler") {
-                window.location.href = "./README.md"
+                fetch("./README.md")
+                    .then(dat => dat.text())
+                    .then(text => {
+                        document.querySelector("#document").innerHTML = text;
+                    })
             }
             else window.location.href = "./server.html?type=shortenlink&username=" + getURL;
         //}

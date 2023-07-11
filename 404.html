@@ -12,8 +12,7 @@
     <md-block id="document"></md-block>
     <script>
         //document.body.onload = function () {
-            let getURL = "https://shrtco.de/" +
-            window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", "");
+            let getURL = window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", "");
             if (getURL === "belgeler") {
                 fetch("./README.md")
                     .then(dat => dat.text())

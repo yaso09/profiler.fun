@@ -32,6 +32,14 @@ workbox.routing.registerRoute(
 );
 
 self.addEventListener('fetch', (event) => {
+  const requestURL = new URL(event.request.url);
+
+  if (requestURL.protocol === 'profilerapp:') {
+    // Özel URL şemanıza uygun istekleri profil uygulamasına yönlendirin.
+    event.respondWith(
+      fetch('https://www.yaso09.github.io/profiler.fun' + requestURL.pathname)
+    );
+  }
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
       try {

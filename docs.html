@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:name" content="Profiler.fun">
+    <meta property="og:description" content="Havalı profiller oluşturun ve paylaşın!">
+    <title>Profiler</title>
+</head>
+<body>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <md-block id="document"></md-block>
+    <script>
+      fetch("./README.md")
+        .then(dat => dat.text())
+        .then(text => {
+          document.querySelector("#document").innerHTML = text;
+      })
+    </script>
+</body>
+</html>

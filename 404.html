@@ -14,11 +14,7 @@
         //document.body.onload = function () {
             let getURL = window.location.href.substring(window.location.href.lastIndexOf("/") + 1).replace("/", "");
             if (getURL === "belgeler") {
-                fetch("./README.md")
-                    .then(dat => dat.text())
-                    .then(text => {
-                        document.querySelector("#document").innerHTML = text;
-                    })
+                window.location.href = "docs";
             }
             else window.location.href = "./server.html?type=shortenlink&username=" + getURL;
         //}

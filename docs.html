@@ -9,12 +9,12 @@
 </head>
 <body>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <md-block id="document"></md-block>
+    <md-block id="doc" src="README.md"></md-block>
     <script>
       fetch("./README.md")
         .then(dat => dat.text())
         .then(text => {
-          document.querySelector("#document").innerHTML = text;
+          document.querySelector("#doc").innerHTML = text;
       })
     </script>
 </body>

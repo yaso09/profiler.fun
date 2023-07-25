@@ -51,7 +51,7 @@ Bu örnek profil bir arkadaşım için yapıldı ve tamamen Discord profili baz 
 |background|Siyah (#383838)|
 |txt|Beyaz (Varsayılan)|
 |ctx|Siyah (#383838)|
-|deg|Arkaplan derecesi (Kavraması zor bir cümlesi)|
+|deg|Arkaplan derecesi (Kavraması zor bir cümle)|
 |sound|https://mp3files.cc/dl/bDgycHk0c3F1ZzJKN0tDWlhsdkFFdz/orkhon-old-turkic-rap.mp3|
 |width|300 piksel|
 |fullscreen|İşe göre değişir|

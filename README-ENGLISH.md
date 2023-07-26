@@ -33,7 +33,7 @@ I made this project entirely to redesign and test Discord profiles created using
 |fullscreen|Sets the "ok" value to make the profile card fill the entire screen.|
 
 ### Example profile review
-Bu örnek profil bir arkadaşım için yapıldı ve tamamen Discord profili baz alındı. [Buradan bağlantıya ulaşabilirsiniz.](https://yaso09.github.io/profiler.fun/?username=Mete%20Han&avatar=https://cdn.discordapp.com/avatars/1018871807194972250/60445f031c9065ff63e4a8ce19db3d42.webp?size=100&banner=https://cdn.yeniakit.com.tr/images/news/625/mete-han-0f6fff.jpg&sound=https://mp3files.cc/dl/bDgycHk0c3F1ZzJKN0tDWlhsdkFFdz/orkhon-old-turkic-rap.mp3&info=metehan209&background=383838&deg=-45&bio=Game%20Developer%20Discord%20sunucum%20%7C%20my%20discord%20server%20%3Ca%20href=%22https://discord.gg/py9PcgGkVd%22%3Ehttps://discord.gg/py9PcgGkVd%3C/a%3E&avatar=https://cdn.discordapp.com/avatars/1018871807194972250/60445f031c9065ff63e4a8ce19db3d42.webp?size=100&youtube=tngrgamesturkce&width=300&txt=ffffff&ctx=000000) Aşağıda da parametreler açısından bu profilin incelemesine ulaşabilirsiniz.
+This sample profile was made for a friend of mine and is based entirely on his Discord profile. [You can find the link here.](https://yaso09.github.io/profiler.fun/?username=Mete%20Han&avatar=https://cdn.discordapp.com/avatars/1018871807194972250/60445f031c9065ff63e4a8ce19db3d42.webp?size=100&banner=https://cdn.yeniakit.com.tr/images/news/625/mete-han-0f6fff.jpg&sound=https://mp3files.cc/dl/bDgycHk0c3F1ZzJKN0tDWlhsdkFFdz/orkhon-old-turkic-rap.mp3&info=metehan209&background=383838&deg=-45&bio=Game%20Developer%20Discord%20sunucum%20%7C%20my%20discord%20server%20%3Ca%20href=%22https://discord.gg/py9PcgGkVd%22%3Ehttps://discord.gg/py9PcgGkVd%3C/a%3E&avatar=https://cdn.discordapp.com/avatars/1018871807194972250/60445f031c9065ff63e4a8ce19db3d42.webp?size=100&youtube=tngrgamesturkce&width=300&txt=ffffff&ctx=000000) Below you can find the review of this profile in values of parameters..
 |Parameter|Value|
 |--|--|
 |username|Mete Han|
@@ -51,7 +51,7 @@ Bu örnek profil bir arkadaşım için yapıldı ve tamamen Discord profili baz 
 |background|Black (#383838)|
 |txt|White (Default)|
 |ctx|Black (#383838)|
-|deg| (Kavraması zor bir cümle)|
+|deg|-45|
 |sound|https://mp3files.cc/dl/bDgycHk0c3F1ZzJKN0tDWlhsdkFFdz/orkhon-old-turkic-rap.mp3|
-|width|300 piksel|
-|fullscreen|İşe göre değişir|
+|width|300 pixel|
+|fullscreen|Depends on the job|

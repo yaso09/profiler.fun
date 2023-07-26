@@ -12,7 +12,7 @@ I made this project entirely to redesign and test Discord profiles created using
 
 |Parameters|Descriptions|
 |--|--|
-|username|Anlaşılacağı gibi kullanıcı adı.|
+|username|Username as it turns out|
 |banner|Banner|
 |info|Short information|
 |avatar|Avatar|

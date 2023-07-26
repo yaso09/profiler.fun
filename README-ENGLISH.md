@@ -1,5 +1,5 @@
 # Profiler | Create and share cool profiles!
-This article is also available in: [Türkçe](README.md)
+This article is also available in: [Türkçe](README.md)  
 Try it yourself: [profiler.fun](https://yaso09.github.io/profiler.fun)
 
 |Features/Browser|All new browsers|Internet Explorer|

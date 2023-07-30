@@ -15,182 +15,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style id="style">
-        body {
-    position: sticky;
-    background: #cec5cb;
-}
-        .profile-card {
-  width: 300px;
-  background: linear-gradient(45deg, #000000 25%, #9e479e 50%, #000000 75%, #9e479e 100%);
-  border-radius: 5px;
-  padding: 20px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: right;
-  background-size: 200% 200%;
-  animation: wave 3s linear infinite;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  justify-content: center;
-  align-items: center;
-  display: block;
-}
-
-.links {
-    text-align: center;
-}
-
-.links input[type=image] {
-    height: 25px;
-    padding: 5px;
-}
-
-.option {
-    height: 30px;
-    padding: 5px;
-}
-
-@keyframes wave {
-    0% {
-      background-position: 0% 50%;
+            body {
+        position: sticky;
+        background: #cec5cb;
     }
-    100% {
-      background-color: 100% 50%;
-    }
-}
-
-p {
-    text-align: center;
-    font-size: smaller;
-}
-
-.footer {
-    color: white;
-}
-
-.info {
-    font-size: small;
-}
-
-.profile-card input[type=text] {
-    width: 100%;
-    height: 35px;
+            .profile-card {
+    width: 300px;
+    background: linear-gradient(45deg, #000000 25%, #9e479e 50%, #000000 75%, #9e479e 100%);
     border-radius: 5px;
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.profile-card input[type=url] {
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.profile-card input[type=color] {
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: #9e479e;
-    color: white;
-    text-align: center;
-}
-
-.profile-card textarea {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-}
-
-.profile-card input[type=number] {
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.profile-card input[type=button] {
-    width: 100%;
-    height: 35px;
-    border-radius: 50px;
-    border: 1px solid white;
-    background-color: gray;
-    color: white;
-    text-align: center;
-}
-
-::placeholder {
-    color: white;
-    text-align: center;
-}
-
-a {
-    color: white;
-}
-
-.profile-card .avatar {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 5px;
-  float: left; 
-  padding: 5px; 
-  animation: spin 10s linear infinite;
-  animation-play-state: running;
-}
-
-.profile-card .avatar:hover {
-    motion-rotation: 0deg;
-    animation-play-state: paused;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.ctx {
-    background-color: #9e479e;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: right;
+    background-size: 200% 200%;
+    animation: wave 3s linear infinite;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
+    justify-content: center;
+    align-items: center;
+    display: block;
+    }
 
-.profile-card .username {
-  font-size: 15px;
-  font-weight: bold;
-}
+    .links {
+        text-align: center;
+    }
 
-.profile-card .bio {
-  font-size: 14px;
-  margin-top: 10px;
-}
+    .links input[type=image] {
+        height: 25px;
+        padding: 5px;
+    }
 
-.profile-card .banner {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 5px;
-}
+    .option {
+        height: 30px;
+        padding: 5px;
+    }
+
+    @keyframes wave {
+        0% {
+        background-position: 0% 50%;
+        }
+        100% {
+        background-color: 100% 50%;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .footer {
+        color: white;
+    }
+
+    .info {
+        font-size: small;
+    }
+
+    .profile-card input[type=text] {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .profile-card input[type=url] {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .profile-card input[type=color] {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: #9e479e;
+        color: white;
+        text-align: center;
+    }
+
+    .profile-card textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+    }
+
+    .profile-card input[type=number] {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .profile-card input[type=button] {
+        width: 100%;
+        height: 35px;
+        border-radius: 10px;
+        border: 1px solid white;
+        background-color: #005ff7;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .profile-card input[button]:hover {
+        color: black;
+        background-color: white;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    ::placeholder {
+        color: #ffffff80;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+    }
+
+    .profile-card .avatar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    float: left; 
+    padding: 5px; 
+    animation: spin 10s linear infinite;
+    animation-play-state: running;
+    }
+
+    .profile-card .avatar:hover {
+        motion-rotation: 0deg;
+        animation-play-state: paused;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .ctx {
+        background-color: #9e479e;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-card .username {
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    .profile-card .bio {
+    font-size: 14px;
+    margin-top: 10px;
+    }
+
+    .profile-card .banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 5px;
+    }
     </style>
     <title>Profiler</title>
     <script>
@@ -271,6 +279,7 @@ a {
                 Karakter sınırlaması yoktur. Ancak en fazla isim için 16 karakter, Kısa bilgi için 30 karakter ve açıklama için 200 karakter önerilir.
             </div>
             <p style="text-align: center;">_____________________________________</p>
+            <input type="text" id="msg" placeholder="Mesaj gönder">
             <input class="option" id="copyCode" type="image" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMDMuMDM5MTIiIGhlaWdodD0iMjAyLjg2ODA3IiB2aWV3Qm94PSIwLDAsMjAzLjAzOTEyLDIwMi44NjgwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOC41MjQyNywtNzguNjk2MjQpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTE0OC40MDg0MSwyNzEuNTkxNTljLTE1LjQ0ODY5LC0xNS40NDg2OSAtMTAuNjk2NTMsLTE3Mi40ODY2NSAwLC0xODMuMTgzMThjMTQuMTI2MzcsLTE0LjEyNjM3IDE3MS40NjYzNSwtMTEuNzE2ODMgMTgzLjE4MzE4LDBjMTEuODYxMTgsMTEuODYxMTggMTQuNjU3LDE2OC41MjYxOCAwLDE4My4xODMxOGMtMTIuMDc0ODQsMTIuMDc0ODQgLTE2OC43MTc3MiwxNC40NjU0NiAtMTgzLjE4MzE4LDB6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMjYzLjYyMzI3LDEyNi4zNzQxOGwtMzEuODk2NCwxMTEuNjM3MzljLTEuMjIxMDMsNC4yMzYyNCAtNS42MzE3MSw2LjcwMzIzIC05Ljg2Nzk1LDUuNDgyMTljLTQuMjM2MjQsLTEuMjIxMDMgLTYuNzAzMjMsLTUuNjMxNzEgLTUuNDgyMTksLTkuODY3OTVsMzEuODk2NCwtMTExLjYzNzM5YzEuMjIxMDMsLTQuMjM2MjQgNS42MzE3MSwtNi43MDMyMyA5Ljg2Nzk1LC01LjQ4MjE5YzQuMjM2MjQsMS4yMjEwMyA2LjcwMzIzLDUuNjMxNzEgNS40ODIxOSw5Ljg2Nzk1ek0yNzguMjAwOTIsMTQ2LjQ1ODk1YzMuMTE0ODgsLTMuMTE0ODggOC4xNzM0NSwtMy4xMTQ4OCAxMS4yODgzMywwbDI3LjkwOTM1LDI3LjkwOTM1YzMuMTE0ODgsMy4xMTQ4OCAzLjExNDg4LDguMTczNDUgMCwxMS4yODgzM2wtMjcuOTA5MzUsMjcuOTA5MzVjLTMuMTE0ODgsMy4xMTQ4OCAtOC4xNzM0NSwzLjExNDg4IC0xMS4yODgzMywwYy0zLjExNDg4LC0zLjExNDg4IC0zLjExNDg4LC04LjE3MzQ1IDAsLTExLjI4ODMzbDIyLjI3NzY0LC0yMi4yNzc2NGwtMjIuMjUyNzIsLTIyLjI3NzY0Yy0zLjExNDg4LC0zLjExNDg4IC0zLjExNDg4LC04LjE3MzQ1IDAsLTExLjI4ODMzek0yMDEuNzk5MDgsMTU3LjcyMjM2bC0yMi4yNzc2NCwyMi4yNzc2NGwyMi4yNzc2NCwyMi4yNTI3MmMzLjExNDg4LDMuMTE0ODggMy4xMTQ4OCw4LjE3MzQ1IDAsMTEuMjg4MzNjLTMuMTE0ODgsMy4xMTQ4OCAtOC4xNzM0NSwzLjExNDg4IC0xMS4yODgzMywwbC0yNy45MDkzNSwtMjcuOTA5MzVjLTMuMTE0ODgsLTMuMTE0ODggLTMuMTE0ODgsLTguMTczNDUgMCwtMTEuMjg4MzNsMjcuOTA5MzUsLTI3LjkwOTM1YzMuMTE0ODgsLTMuMTE0ODggOC4xNzM0NSwtMy4xMTQ4OCAxMS4yODgzMywwYzMuMTE0ODgsMy4xMTQ4OCAzLjExNDg4LDguMTczNDUgMCwxMS4yODgzM3oiIGZpbGw9IiM5ZTQ3OWUiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjEwMS40NzU3MzAzNjc0NDkxMzoxMDEuMzAzNzU3NjgwOTAxMjgtLT4=" alt="Kodu kopyala">
             <input class="option" id="share" type="image" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMDMuMDM5MTIiIGhlaWdodD0iMjAyLjg2ODA3IiB2aWV3Qm94PSIwLDAsMjAzLjAzOTEyLDIwMi44NjgwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOC41MjQyNywtNzguNjk2MjQpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PGc+PHBhdGggZD0iTTE0OC40MDg0MSwyNzEuNTkxNTljLTE1LjQ0ODY5LC0xNS40NDg2OSAtMTAuNjk2NTMsLTE3Mi40ODY2NSAwLC0xODMuMTgzMThjMTQuMTI2MzcsLTE0LjEyNjM3IDE3MS40NjYzNSwtMTEuNzE2ODMgMTgzLjE4MzE4LDBjMTEuODYxMTgsMTEuODYxMTggMTQuNjU3LDE2OC41MjYxOCAwLDE4My4xODMxOGMtMTIuMDc0ODQsMTIuMDc0ODQgLTE2OC43MTc3MiwxNC40NjU0NiAtMTgzLjE4MzE4LDB6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMjYyLjI4NzY3LDEyMy42ODMyMWw0MS43NTY3NiwzNy41ODEwOGMxLjc3NDY2LDEuNTkxOTcgMi43NjYzOSwzLjgzNjQgMi43NjYzOSw2LjIxMTMxYzAsMi4zNzQ5MSAtMS4wMTc4Miw0LjYxOTM1IC0yLjc2NjM5LDYuMjExMzJsLTQxLjc1Njc1LDM3LjU4MTA4Yy0yLjQ1MzIxLDIuMTkyMjMgLTUuOTUwMzQsMi43NDAyOSAtOC45Nzc3LDEuNDA5MjljLTMuMDI3MzcsLTEuMzMxIC00Ljk1ODYyLC00LjMzMjI2IC00Ljk1ODYyLC03LjYyMDYxdi0xNi43MDI3aC0yNS4wNTQwNmMtMTMuODMxOTMsMCAtMjUuMDU0MDUsMTEuMjIyMTMgLTI1LjA1NDA1LDI1LjA1NDA2YzAsNy45MzM3OSAzLjM0MDU0LDEyLjUwMDkzIDUuNzkzNzUsMTQuODIzNjVjMS40MzUzOSwxLjMzMSAyLjU1NzYsMy4xMzE3NSAyLjU1NzYsNS4wODkxYzAsMi44MTg1OCAtMi4yOTY2Miw1LjE0MTMgLTUuMTQxMyw1LjE0MTNjLTAuNzMwNzUsMCAtMS40NjE0OSwtMC4xMzA0OSAtMi4xMTM5MywtMC40OTU4NmMtNC44ODAzMiwtMi42NjE5OSAtMjYuMTUwMTcsLTE1Ljg2NzU3IC0yNi4xNTAxNywtNDUuNDM2NTdjMCwtMjUuMzY3MjMgMjAuNTY1MiwtNDUuOTMyNDMgNDUuOTMyNDMsLTQ1LjkzMjQzaDI5LjIyOTczdi0xNi43MDI3MWMwLC0zLjI4ODM1IDEuOTU3MzUsLTYuMjg5NjEgNC45NTg2MiwtNy42MjA2YzMuMDAxMjcsLTEuMzU3MSA2LjUyNDQ5LC0wLjgwOTA0IDguOTc3NywxLjQwOTI5eiIgZmlsbD0iIzllNDc5ZSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9nPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjEwMS40NzU3MzM3MDUyMzgwMToxMDEuMzAzNzYzNTU5MjY1MTUtLT4=" alt="Paylaş">
             <input class="option" id="shirt" type="image" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyMDMuMDM5MTIiIGhlaWdodD0iMjAyLjg2ODA3IiB2aWV3Qm94PSIwLDAsMjAzLjAzOTEyLDIwMi44NjgwNyI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzOC41MjQyNiwtNzguNjk2MjQpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTE0OC40MDg0MSwyNzEuNTkxNTljLTE1LjQ0ODY5LC0xNS40NDg2OSAtMTAuNjk2NTMsLTE3Mi40ODY2NSAwLC0xODMuMTgzMThjMTQuMTI2MzcsLTE0LjEyNjM3IDE3MS40NjYzNSwtMTEuNzE2ODMgMTgzLjE4MzE4LDBjMTEuODYxMTgsMTEuODYxMTggMTQuNjU3LDE2OC41MjYxOCAwLDE4My4xODMxOGMtMTIuMDc0ODQsMTIuMDc0ODQgLTE2OC43MTc3MiwxNC40NjU0NiAtMTgzLjE4MzE4LDB6IiBmaWxsPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMjE0LjgwNjcyLDEyMC4zOTI5NWMxLjgxNjE1LDAgMy4zMjk2MiwxLjMyNzE4IDMuODg4NDMsMy4wNzM0OWMyLjg2MzkzLDkuMDEwOSAxMS4zMTYwMywxNS41NTM3MSAyMS4zMDQ4NiwxNS41NTM3MWM5Ljk4ODg0LDAgMTguNDQwOTIsLTYuNTQyODEgMjEuMzA0ODYsLTE1LjU1MzcxYzAuNTU4ODEsLTEuNzQ2MyAyLjA3MjI4LC0zLjA3MzQ5IDMuODg4NDMsLTMuMDczNDloMi45MzM3OGM1LjIzODksMCAxMC4yOTE1MywxLjgzOTQ0IDE0LjMxOTY2LDUuMTkyMzNsMjkuMzg0NDEsMjQuNDcxNDljMS41MzY3NSwxLjI4MDYyIDIuNDkxMzksMy4xNDMzNCAyLjY1NDM4LDUuMTQ1NzdjMC4xNjI5OCwyLjAwMjQyIC0wLjQ4ODk2LDMuOTgxNTcgLTEuODE2MTUsNS40OTUwMmwtMTMuMDM5MDQsMTQuOTAxNzdjLTIuNjU0MzgsMy4wNTAyMSAtNy4yNjQ2LDMuMzk5NDYgLTEwLjM4NDY3LDAuODE0OTRsLTExLjk5MTI2LC05Ljk4ODg0djU4LjI3OTg2YzAsOC4yMTkyNSAtNi42ODI1MSwxNC45MDE3NyAtMTQuOTAxNzcsMTQuOTAxNzdoLTQ0LjcwNTI5Yy04LjIxOTI1LDAgLTE0LjkwMTc3LC02LjY4MjUxIC0xNC45MDE3NywtMTQuOTAxNzd2LTU4LjI3OTg2bC0xMS45OTEyNiw5Ljk4ODg0Yy0zLjA5Njc4LDIuNTg0NTIgLTcuNzA3MDEsMi4yMzUyNiAtMTAuMzg0NjcsLTAuODE0OTRsLTEzLjAzOTA0LC0xNC45MDE3N2MtMS4zMjcxOCwtMS41MTM0NiAtMS45NzkxNCwtMy40OTI2IC0xLjgxNjE1LC01LjQ5NTAyYzAuMTYyOTgsLTIuMDAyNDIgMS4xMTc2MywtMy44NjUxNSAyLjY1NDM4LC01LjE0NTc3bDI5LjM4NDQxLC0yNC40NzE0OWM0LjAyODEzLC0zLjM1MjkgOS4wODA3NiwtNS4xOTIzMyAxNC4zMTk2NiwtNS4xOTIzM3oiIGZpbGw9IiM5ZTQ3OWUiIHN0cm9rZS13aWR0aD0iMSIvPjwvZz48L2c+PC9zdmc+PCEtLXJvdGF0aW9uQ2VudGVyOjEwMS40NzU3MzYyMDE4OTYzNToxMDEuMzAzNzU2NjUwNDkyMjUtLT4=" alt="T-Shirt Yazdır">
@@ -280,7 +289,299 @@ a {
     </div>
     </center>
     <script>    
-function isMobile(){let e=window.innerWidth;return e<768}function getParam(e){let t=new URLSearchParams(window.location.search);return t.get(e)}function getHash(){return window.location.hash}document.querySelector("#share").addEventListener("click",function(){navigator.canShare&&navigator.share({title:getParam("username")+" | Profiler",text:"Şu havalı profile bakın!",url:window.location.href})}),document.querySelector("#copyCode").addEventListener("click",function(){var e=Number(document.querySelector(".profile-card").clientHeight),t=Number(document.querySelector(".profile-card").clientWidth);navigator.clipboard.writeText("<iframe width='"+t+"' height='"+Number(e)+"' src="+window.location.href+"&fullscreen=ok style='border-radius: 8px; border: 0px;' scrolling='no'></iframe>")});var url=window.location.href,cleanUrl=url.split("?")[0];document.querySelector("a").href=cleanUrl,window.location.href===cleanUrl&&(document.querySelector("#copyCode").hidden=!0),document.title="Profiler";const username=document.querySelector(".name"),banner=document.querySelector(".banner"),info=document.querySelector(".info"),avatar=document.querySelector(".avatar"),youtube=document.querySelector(".youtube"),instagram=document.querySelector(".instagram"),tiktok=document.querySelector(".tiktok"),reddit=document.querySelector(".reddit"),twitch=document.querySelector(".twitch"),twitter=document.querySelector(".twitter"),github=document.querySelector(".github"),bio=document.querySelector(".bio"),pp=document.querySelector(".profile-card");function controlParam(){return window.location.href===cleanUrl}if(null===getParam("username")&&controlParam()||(document.title=getParam("username")+" | Profiler",username.innerHTML=getParam("username")),null===getParam("banner")&&controlParam()||(banner.src=getParam("banner")),null===getParam("info")&&controlParam()||(info.textContent=getParam("info")),null===getParam("avatar")&&controlParam()||(avatar.src=getParam("avatar")),null===getParam("youtube")&&controlParam()?youtube.onclick=function(){window.open("https://youtube.com/@hayyuutuup",null,"width=640, height=480")}:(null===getParam("youtube")?youtube.hidden=!0:youtube.hidden=!1,youtube.onclick=function(){window.open("https://youtube.com/@"+getParam("youtube"),null,"width=360, height=480")}),null===getParam("instagram")&&controlParam()?instagram.hidden=!0:(null===getParam("instagram")?instagram.hidden=!0:instagram.hidden=!1,instagram.onclick=function(){window.open("https://instagram.com/"+getParam("instagram"),null,"width=360, height=480")}),null===getParam("tiktok")&&controlParam()?tiktok.hidden=!0:(null===getParam("tiktok")?tiktok.hidden=!0:tiktok.hidden=!1,tiktok.onclick=function(){window.open("https://tiktok.com/@"+getParam("tiktok"),null,"width=360, height=480")}),null===getParam("reddit")&&controlParam()?reddit.hidden=!0:(null===getParam("reddit")?reddit.hidden=!0:reddit.hidden=!1,tiktok.onclick=function(){window.open("https://reddit.com/r/"+getParam("reddit"),null,"width=360, height=480")}),null===getParam("twitch")&&controlParam()?twitch.hidden=!0:(null===getParam("twitch")?twitch.hidden=!0:twitch.hidden=!1,twitch.onclick=function(){window.open("https://twitch.tv/"+getParam("twitch"),null,"width=360, height=480")}),null===getParam("twitter")&&controlParam()?twitter.hidden=!0:(null===getParam("twitter")?twitter.hidden=!0:twitter.hidden=!1,twitter.onclick=function(){window.open("https://twitter.com/"+getParam("twitter"),null,"width=360, height=480")}),null===getParam("github")&&controlParam()?github.onclick=function(){window.open("https://github.com/yaso09",null,"width=640, height=480")}:(null===getParam("github")?github.hidden=!0:github.hidden=!1,github.onclick=function(){window.open("https://github.com/"+getParam("github"),null,"width=360, height=480")}),null===getParam("bio")&&controlParam()||(bio.innerHTML=getParam("bio")),null===getParam("background")&&controlParam());else{let e=document.head.querySelector("#style").innerHTML.replace("#9e479e","#"+getParam("background"));document.querySelector("#style").remove();let t=document.createElement("style");t.id="style",t.innerHTML=e;let r=document.querySelector("#style");document.head.insertBefore(t,r)}if(null===getParam("txt")&&controlParam());else{let l=document.head.querySelector("#style").innerHTML.replace("color: #fff","color: #"+getParam("txt"));document.querySelector("#style").remove();let a=document.createElement("style");a.id="style",a.innerHTML=l;let o=document.querySelector("#style");document.head.insertBefore(a,o)}if(null===getParam("ctx")&&controlParam()||(document.querySelector(".ctx").style.backgroundColor="#"+getParam("ctx")),null===getParam("deg")&&controlParam()||(document.head.querySelector("style").innerHTML=document.head.querySelector("style").innerHTML.replace("(45deg","("+getParam("deg")+"deg")),null===getParam("sound")&&controlParam()){let i=document.querySelector("audio");i.src="https://mp3files.cc/dl/Wm16K2thY2pOdGxycXQzWStzVXViQT/kral-sakir-giris-muzigi.mp3",document.querySelector(".profile-card .avatar").onclick=function(){i.paused?i.play():i.pause()}}else{let n=document.querySelector("audio");n.src=getParam("sound"),document.querySelector(".avatar").addEventListener("click",function(){n.paused?n.play():n.pause()})}if(null===getParam("width")){let u=document.head.querySelector("#style").innerHTML.replace("width: 300px","width: 300px");document.querySelector("#style").remove();let c=document.createElement("style");c.id="style",c.innerHTML=u;let d=document.querySelector("#style");document.head.insertBefore(c,d)}else{let y=document.head.querySelector("#style").innerHTML.replace("width: 300","width: "+getParam("width"));document.querySelector("#style").remove();let h=document.createElement("style");h.id="style",h.innerHTML=y;let s=document.querySelector("#style");document.head.insertBefore(h,s)}const urlParams=new URLSearchParams(window.location.search);function apply(){var e="?";return""===document.querySelector("#username2").value||(e+="username="+document.querySelector("#username2").value+"&"),""===document.querySelector("#avatar2").value||(e+="avatar="+document.querySelector("#avatar2").value+"&"),""===document.querySelector("#banner2").value||(e+="banner="+document.querySelector("#banner2").value+"&"),""===document.querySelector("#music2").value||(e+="sound="+document.querySelector("#music2").value+"&"),""===document.querySelector("#info2").value||(e+="info="+document.querySelector("#info2").value+"&"),""===document.querySelector("#background2").value||(e+="background="+document.querySelector("#background2").value.replace("#","")+"&"),""===document.querySelector("#deg2").value?e+="deg=45&":e+="deg="+document.querySelector("#deg2").value+"&",""===document.querySelector("#bio2").value||(e+="bio="+document.querySelector("#bio2").value+"&"),""===document.querySelector("#avatar2").value||(e+="avatar="+document.querySelector("#avatar2").value+"&"),""===document.querySelector("#youtube2").value||(e+="youtube="+document.querySelector("#youtube2").value+"&"),""===document.querySelector("#instagram2").value||(e+="instagram="+document.querySelector("#instagram2").value+"&"),""===document.querySelector("#tiktok2").value||(e+="tiktok="+document.querySelector("#tiktok2").value+"&"),""===document.querySelector("#reddit2").value||(e+="reddit="+document.querySelector("#reddit2").value+"&"),""===document.querySelector("#twitch2").value||(e+="twitch="+document.querySelector("#twitch2").value+"&"),""===document.querySelector("#twitter2").value||(e+="twitter="+document.querySelector("#twitter2").value+"&"),""===document.querySelector("#github2").value||(e+="github="+document.querySelector("#github2").value+"&"),""===document.querySelector("#width2").value?e+="width=300&":e+="width="+document.querySelector("#width2").value+"&",""===document.querySelector("#txt2").value||(e+="txt="+document.querySelector("#txt2").value.replace("#","")+"&"),""===document.querySelector("#ctx2").value||(e+="ctx="+document.querySelector("#ctx2").value.replace("#","")+"&"),e}if(isMobile()){document.body.className="profile-card";let m=document.head.querySelector("#style").innerHTML.replace("width: 300px","width: 90%");document.querySelector("#style").remove();let g=document.createElement("style");g.id="style",g.innerHTML=m;let S=document.querySelector("#style");document.head.insertBefore(g,S)}if("ok"===getParam("fullscreen")){document.body.className="profile-card",document.querySelector("#div0").className="";let q=document.head.querySelector("#style").innerHTML.replace("width: 300px","width: 90%");document.querySelector("#style").remove();let P=document.createElement("style");P.id="style",P.innerHTML=q;let v=document.querySelector("#style");document.head.insertBefore(P,v)}document.querySelector("#copyAdress").onclick=function(){let e=window.location.href+apply();navigator.clipboard.writeText(e.slice(0,-1))};
-    </script>
+function isMobile() {
+    const mobileWidthThreshold = 768;
+    const screenWidth = window.innerWidth;
+    return screenWidth < mobileWidthThreshold;
+}
+function getParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+document.querySelector("#share").addEventListener("click", function() {
+    if (navigator.canShare) {
+            navigator.share({
+                title: getParam("username") + " | Profiler",
+                text: "Şu havalı profile bakın!",
+                url: window.location.href
+            })
+    }
+})
+document.querySelector("#copyCode").addEventListener("click", function() {
+    var x1 = Number(document.querySelector(".profile-card").clientHeight);
+    var x2  = Number(document.querySelector(".profile-card").clientWidth);
+    navigator.clipboard.writeText("<iframe width='" + x2 + 
+    "' height='" + 
+    Number(x1) + 
+    "' src=" + 
+        window.location.href + 
+        "&fullscreen=ok style='border-radius: 8px; border: 0px;' scrolling='no'></iframe>");
+})
+function getHash() {
+    return window.location.hash;
+}
+var url = window.location.href;
+var cleanUrl = url.split('?')[0];
+document.querySelector("a").href = cleanUrl;
+
+if(window.location.href === cleanUrl) document.querySelector("#copyCode").hidden = true;
+
+document.title = "Profiler";
+const username = document.querySelector(".name");
+const banner = document.querySelector(".banner");
+const info = document.querySelector(".info");
+const avatar = document.querySelector(".avatar");
+const youtube = document.querySelector(".youtube");
+const instagram = document.querySelector(".instagram");
+const tiktok = document.querySelector(".tiktok");
+const reddit = document.querySelector(".reddit");
+const twitch = document.querySelector(".twitch");
+const twitter = document.querySelector(".twitter");
+const github = document.querySelector(".github");
+const bio = document.querySelector(".bio");
+const pp = document.querySelector(".profile-card");
+
+function controlParam() {
+    if (window.location.href === cleanUrl) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+if (getParam("username") === null && controlParam()) {
+    //pass;
+} else {
+    document.title = getParam("username") + " | Profiler";
+    username.innerHTML = getParam("username");
+}
+if (getParam("banner") === null && controlParam()) {
+    //pass;
+} else banner.src = getParam("banner");
+if (getParam("info") === null && controlParam()) {
+    //pass;
+} else info.textContent = getParam("info");
+if (getParam("avatar") === null && controlParam()) {
+    //pass;
+} else avatar.src = getParam("avatar");
+if (getParam("youtube") === null && controlParam()) {
+    youtube.onclick = function () {
+        window.open("https://youtube.com/@hayyuutuup", null, "width=640, height=480");
+    }
+} else {
+    if (getParam("youtube") === null) youtube.hidden = true;
+    else youtube.hidden = false;
+    youtube.onclick = function () {
+        window.open("https://youtube.com/@" + getParam("youtube"), null, "width=360, height=480");
+    }
+}
+if (getParam("instagram") === null && controlParam()) {
+    instagram.hidden = true;
+} else {
+    if (getParam("instagram") === null) instagram.hidden = true;
+    else instagram.hidden = false;
+    instagram.onclick = function () {
+        window.open("https://instagram.com/" + getParam("instagram"), null, "width=360, height=480");
+    }
+}
+if (getParam("tiktok") === null && controlParam()) {
+    tiktok.hidden = true;
+} else {
+    if (getParam("tiktok") === null) tiktok.hidden = true;
+    else tiktok.hidden = false;
+    tiktok.onclick = function () {
+        window.open("https://tiktok.com/@" + getParam("tiktok"), null, "width=360, height=480");
+    }
+}
+if (getParam("reddit") === null && controlParam()) {
+    reddit.hidden = true;
+} else {
+    if (getParam("reddit") === null) reddit.hidden = true;
+    else reddit.hidden = false;
+    tiktok.onclick = function () {
+        window.open("https://reddit.com/r/" + getParam("reddit"), null, "width=360, height=480");
+    }
+}
+if (getParam("twitch") === null && controlParam()) {
+    twitch.hidden = true;
+} else {
+    if (getParam("twitch") === null) twitch.hidden = true;
+    else twitch.hidden = false;
+    twitch.onclick = function () {
+        window.open("https://twitch.tv/" + getParam("twitch"), null, "width=360, height=480");
+    }
+}
+if (getParam("twitter") === null && controlParam()) {
+    twitter.hidden = true;
+} else {
+    if (getParam("twitter") === null) twitter.hidden = true;
+    else twitter.hidden = false; 
+    twitter.onclick = function () {
+        window.open("https://twitter.com/" + getParam("twitter"), null, "width=360, height=480");
+    }
+}
+if (getParam("github") === null && controlParam()) {
+    github.onclick = function () {
+        window.open("https://github.com/yaso09", null, "width=640, height=480");
+    }
+} else {
+    if (getParam("github") === null) github.hidden = true;
+    else github.hidden = false;
+    github.onclick = function () {
+        window.open("https://github.com/" + getParam("github"), null, "width=360, height=480");
+    }
+}
+if (getParam("bio") === null && controlParam()) {
+    //pass;
+} else bio.innerHTML = getParam("bio");
+if (getParam("background") === null && controlParam()) {
+    //pass;
+} else {
+    let style = document.head.querySelector("#style").innerHTML.replace("#9e479e", "#" + getParam("background"));
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+}
+if (getParam("txt") === null && controlParam()) {
+    //pass;
+} else {
+    let style = document.head.querySelector("#style").innerHTML.replace("color: #fff", "color: #" + getParam("txt"));
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+}
+if (getParam("ctx") === null && controlParam()) {
+    //pass;
+} else {
+    document.querySelector(".ctx").style.backgroundColor = "#" + getParam("ctx");
+}
+if (getParam("deg") === null && controlParam()) {
+    //pass;
+} else document.head.querySelector("style").innerHTML = document.head.querySelector("style").innerHTML.replace("(45deg", "(" + getParam("deg") + "deg");
+if (getParam("sound") === null && controlParam()) {
+    let a = document.querySelector("audio");
+    a.src = "https://mp3files.cc/dl/Wm16K2thY2pOdGxycXQzWStzVXViQT/kral-sakir-giris-muzigi.mp3";
+    document.querySelector(".profile-card .avatar").onclick = function () {
+        if (a.paused) a.play();
+        else a.pause();
+    }
+} else {
+    let a = document.querySelector("audio");
+    a.src = getParam("sound");
+    document.querySelector(".avatar").addEventListener("click" ,function () {
+        if (a.paused) a.play();
+        else a.pause();
+    })
+}
+if (getParam("width") === null) { 
+    let style = document.head.querySelector("#style").innerHTML.replace("width: 300px", "width: 300px");
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+} else {
+    let style = document.head.querySelector("#style").innerHTML.replace("width: 300", "width: " + getParam("width"));
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+}
+const urlParams = new URLSearchParams(window.location.search);
+function apply() {
+    var result = "?";
+    if (document.querySelector("#username2").value === "") {
+      //pass;  
+    } else result += "username=" + document.querySelector("#username2").value + "&";
+    if (document.querySelector("#avatar2").value === "") {
+      //pass;  
+    } else result += "avatar=" + document.querySelector("#avatar2").value + "&";
+    if (document.querySelector("#banner2").value === "") {
+      //pass;  
+    } else result += "banner=" + document.querySelector("#banner2").value + "&";
+    if (document.querySelector("#music2").value === "") {
+      //pass;  
+    } else result += "sound=" + document.querySelector("#music2").value + "&";
+    if (document.querySelector("#info2").value === "") {
+      //pass;  
+    } else result += "info=" + document.querySelector("#info2").value + "&";
+    if (document.querySelector("#background2").value === "") {
+      //pass;  
+    } else result += "background=" + document.querySelector("#background2").value.replace("#", "") + "&";
+    if (document.querySelector("#deg2").value === "") {
+        result += "deg=45&";
+    } else result += "deg=" + document.querySelector("#deg2").value + "&";
+    if (document.querySelector("#bio2").value === "") {
+      //pass;  
+    } else result += "bio=" + document.querySelector("#bio2").value + "&";
+    if (document.querySelector("#avatar2").value === "") {
+      //pass;  
+    } else result += "avatar=" + document.querySelector("#avatar2").value + "&";
+    if (document.querySelector("#youtube2").value === "" ) {
+      //pass;  
+    } else result += "youtube=" + document.querySelector("#youtube2").value + "&";
+    if (document.querySelector("#instagram2").value === "") {
+      //pass;  
+    } else result += "instagram=" + document.querySelector("#instagram2").value + "&";
+    if (document.querySelector("#tiktok2").value === "") {
+      //pass;  
+    } else result += "tiktok=" + document.querySelector("#tiktok2").value + "&";
+    if (document.querySelector("#reddit2").value === "") {
+      //pass;  
+    } else result += "reddit=" + document.querySelector("#reddit2").value + "&";
+    if (document.querySelector("#twitch2").value === "") {
+      //pass;  
+    } else result += "twitch=" + document.querySelector("#twitch2").value + "&";
+    if (document.querySelector("#twitter2").value === "") {
+      //pass;  
+    } else result += "twitter=" + document.querySelector("#twitter2").value + "&";
+    if (document.querySelector("#github2").value === "") {
+      //pass;  
+    } else result += "github=" + document.querySelector("#github2").value + "&";
+    if (document.querySelector("#width2").value === "") {
+        result += "width=300&";
+    } else result += "width=" + document.querySelector("#width2").value + "&";
+    if (document.querySelector("#txt2").value === "") {
+      //pass;  
+    } else result += "txt=" + document.querySelector("#txt2").value.replace("#", "") + "&";
+    if (document.querySelector("#ctx2").value === "") {
+        //pass;  
+      } else result += "ctx=" + document.querySelector("#ctx2").value.replace("#", "") + "&";
+    return result;
+}
+if (isMobile()) {
+    document.body.className = "profile-card";
+    let style = document.head.querySelector("#style").innerHTML.replace("width: 300px", "width: 90%");
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+}
+if (getParam("fullscreen") === "ok") {
+    document.body.className = "profile-card";
+    document.querySelector("#div0").className = "";
+    let style = document.head.querySelector("#style").innerHTML.replace("width: 300px", "width: 90%");
+    document.querySelector("#style").remove();
+    let s = document.createElement("style");
+    s.id = "style";
+    s.innerHTML = style;
+    let sId = document.querySelector("#style");
+    document.head.insertBefore(s, sId);
+}
+document.querySelector("#copyAdress").onclick = function () {
+    let adress = window.location.href + apply();
+    navigator.clipboard.writeText(adress.slice(0, -1));
+}    </script>
 </body>
 </html>

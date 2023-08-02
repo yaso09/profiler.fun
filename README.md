@@ -1,7 +1,8 @@
 # Profiler | Havalı profiller oluşturun ve paylaşın!
 
 Bu yazı şu dillerde de mevcut: [English](README-ENGLISH.md)  
-Kendiniz deneyin: [profiler.fun](https://yaso09.github.io/profiler.fun)
+Kendiniz deneyin: [profiler.fun](https://yaso09.github.io/profiler.fun)  
+Kaynak kodu: [GitHub](https://github.com/yaso09/profiler.fun)
 
 |Özellikler/Tarayıcı|Tüm Yeni Tarayıcılar|Internet Explorer|
 |--|--|--|

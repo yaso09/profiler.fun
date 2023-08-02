@@ -230,6 +230,7 @@
             <input class="twitter" type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png" alt="twitter">
             <input class="github" type="image" src="https://cdn3.iconfinder.com/data/icons/sociocons/256/github-sociocon.png" alt="github">
         </div>
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
         <audio src="" autoplay></audio>
         <img src="https://cdn.discordapp.com/avatars/968941879888576572/3eb7f58e0bc51524ad6e004dd65071c9.webp?size=40" class="avatar" alt="Avatar">
         <div class="ctx">
@@ -433,7 +434,7 @@ if (getParam("github") === null && controlParam()) {
 }
 if (getParam("bio") === null && controlParam()) {
     //pass;
-} else bio.innerHTML = getParam("bio");
+} else bio.innerHTML = "<md-block>" + getParam("bio") + "<md-block>";
 if (getParam("background") === null && controlParam()) {
     //pass;
 } else {

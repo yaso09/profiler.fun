@@ -1,0 +1,167 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #ff74fe; 
+    border-radius: 25px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffbd00; 
+  }
+
+  .cl-internal-1h80eck {
+    background-color: white;
+  }
+
+  .cl-internal-1h80eck:hover {
+    background-color: gray;
+  }
+
+  .cl-internal-b3fm6y {
+    background-color: white;
+    color: black;
+  }
+
+  .cl-footerActionLink {
+    background-color: white;
+    padding: 0 0 0 0;
+  }
+
+  body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #0b3841;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    font-family: Arial, sans-serif;
+    background-color: #0b3841;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  #bar {
+    position: fixed;
+    background-image: url(bg.svg);
+    background-color: #0b3841;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  a {
+    display: inline-block;
+    background-color: #9e479e;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    margin: 0.5em;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: #ffbd00;
+        transition: background-color 0.2s, color 0.2s;
+  }
+
+  li a#gift {
+    background-color: #45a600;
+  }
+
+  li a#gift:hover {
+    color: black;
+    background-color: #ffbd00;
+        transition: background-color 0.2s, color 0.2s;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .post-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .post-form button {
+    display: inline-block;
+    background-color: #9e479e;
+    width: 100%;
+    font-size: medium;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    margin: 0.5em;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .post-form button:hover{
+    color: black;
+    background-color: #ffbd00;
+        transition: background-color 0.2s, color 0.2s;
+  }
+
+  input[type=button] {
+    display: inline-block;
+    background-color: #9e479e;
+    font-size: medium;
+    border: 0 solid;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    margin: 0.5em;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .favicon {
+    width: 60px;
+  }
+
+  .posts {
+    border-radius: 20px;
+    border: 0 solid;
+    padding: 10px;
+  }
+  
+  .post {
+    margin-bottom: 20px;
+  }
+  
+  .post img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }  

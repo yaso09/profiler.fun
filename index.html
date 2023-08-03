@@ -350,6 +350,10 @@ function controlParam() {
     }
 }
 
+if (controlParam()) {
+    window.location.href = "./index2/index";
+}
+
 if (getParam("username") === null && controlParam()) {
     //pass;
 } else {
@@ -480,7 +484,7 @@ if (getParam("sound") === null && controlParam()) {
         else a.pause();
     })
 }
-if (getParam("width") === null) { 
+if (getParam("width") === null) {
     let style = document.head.querySelector("#style").innerHTML.replace("width: 300px", "width: 300px");
     document.querySelector("#style").remove();
     let s = document.createElement("style");

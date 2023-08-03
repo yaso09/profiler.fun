@@ -47,7 +47,31 @@
         </ul>
     </nav>
   </footer>
-  <script async crossorigin="anonymous" data-clerk-publishable-key="pk_test_bWVldC1jYWltYW4tODYuY2xlcmsuYWNjb3VudHMuZGV2JA" onload="window.Clerk.load()" src="https://renewed-gator-70.clerk.accounts.dev/npm/@clerk/clerk-js@4/dist/clerk.browser.js" type="text/javascript"></script>
+  <div id="clerkjs" hidden>
+    <script id="clerk" async crossorigin="anonymous" data-clerk-publishable-key="pk_test_bWVldC1jYWltYW4tODYuY2xlcmsuYWNjb3VudHMuZGV2JA" onload="window.Clerk.load()" src="https://renewed-gator-70.clerk.accounts.dev/npm/@clerk/clerk-js@4/dist/clerk.browser.js" type="text/javascript"></script>
+  </div>
+  <script>
+    var url = window.location.href;
+    var cleanUrl = url.split('?')[0];
+    if (
+      cleanUrl ===
+        "https://yaso09.github.io/profiler.fun/index2/index" || 
+      cleanUrl ===
+       "https://yaso09.github.io/profiler.fun/index2/index.html"
+    ) {
+      document.querySelector("#clerkjs").innerHTML.replace(
+        "pk_test_bWVldC1jYWltYW4tODYuY2xlcmsuYWNjb3VudHMuZGV2JA",
+        fetch("../config.json")
+          .then(dat => dat.json())
+          .then(json => {
+            return json.CLERK_PUB_KEY;
+          })
+          .catch(err => {
+            console.error("Error: " + err);
+          })
+      )
+    }
+  </script>
   <script>
     function addParamToURL(url, params) {
       // Parametreleri sorgu dizesine dönüştürelim

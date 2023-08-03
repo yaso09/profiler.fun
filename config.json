@@ -1,4 +1,4 @@
 {
   "comment": "Add your Clerk public api key to right of the 'CLERK_PUB_KEY'",
-  "CLERK_PUB_API": ""
+  "CLERK_PUB_KEY": ""
 }

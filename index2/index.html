@@ -34,7 +34,7 @@
         <ul>
           <li><a href="#">Ana Sayfa</a></li>
           <li><a href="#">Keşfet</a></li>
-          <li><a href="#">Bildirimler</a></li>
+          <li><a id="notifications" href="#">Bildirimler</a></li>
           <li><a href="#">Ayarlar</a></li>
           <li id="gift3"><a href="#" id="gift" hidden="false">Yükleniyor</a></li>
         </ul>
@@ -116,6 +116,7 @@
               }
               document.querySelector("#create-profile").innerHTML = "Başla";
               document.querySelector("#your-profiles").hidden = true;
+              document.querySelector("#notifications").hidden = true;
             }
             else {
               //Burayı şimdilik geçelim

@@ -9,16 +9,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: #0b3841;
             color: white;
         }
         table {
             color: white;
+        }
+        #bar {
+            position: fixed;
+            background-image: url(bg.svg);
+            background-color: #0b3841;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        a {
+            display: inline-block;
+            background-color: #9e479e;
+            color: #fff;
+            text-decoration: none;
+            padding: 1em 1.5em;
+            border-radius: 1em;
+            margin: 0.5em;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+        }
+        
+        a:hover {
+            color: black;
+            background-color: #ffbd00;
+                transition: background-color 0.2s, color 0.2s;
         }
     </style>
 </head>
 <body>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     <md-block id="doc" src="README.md"></md-block>
+    <footer id="bar">
+        <img style="width: 300px;" src="banner.svg" alt="profiler.fun" class="favicon">
+    </footer>
 </body>
 </html>

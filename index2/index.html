@@ -18,7 +18,7 @@
       <div class="posts">
         <div class="post">
           <div class="post-header">
-            <h3>Profillerin</h3>
+            <h3 id="your-profiles">Profillerin</h3>
           </div>
           <p id="nullWTF">Yok mu? ... Yazık kafana!</p>
           <a id="create-profile" href="#">Hayatta olduğunu kanıtla</a>
@@ -115,6 +115,7 @@
                 user();
               }
               document.querySelector("#create-profile").innerHTML = "Başla";
+              document.querySelector("#your-profiles").hidden = true;
             }
             else {
               //Burayı şimdilik geçelim

@@ -116,10 +116,13 @@
               }
               document.querySelector("#create-profile").innerHTML = "Başla";
               document.querySelector("#your-profiles").hidden = true;
-              document.querySelector("#notifications").hidden = true;
+              document.querySelector("nav").innerHTML = 
+                document.querySelector("nav").innerHTML.replace('<li><a id="notifications" href="#">Bildirimler</a></li>', "");
             }
             else {
-              //Burayı şimdilik geçelim
+              document.querySelector("#create-profile").onclick = function() {
+                window.alert("Daha gelmedi...");
+              }
             }
           }
         }

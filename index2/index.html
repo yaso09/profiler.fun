@@ -62,9 +62,9 @@
       document.querySelector("#clerkjs").innerHTML.replace(
         "pk_test_bWVldC1jYWltYW4tODYuY2xlcmsuYWNjb3VudHMuZGV2JA",
         fetch("../config.json")
-          .then(dat => dat.json())
-          .then(json => {
-            return json.CLERK_PUB_KEY;
+          .then(response => response.json())
+          .then(data => {
+            console.log(data.CLERK_PUB_KEY);
           })
           .catch(err => {
             console.error("Error: " + err);

@@ -1,3 +1,4 @@
 {
-  "say": "hello"
+  "comment": "Add your Clerk public api key to right of the 'ClERK_PUB_KEY'",
+  "CLERK_PUB_API": ""
 }

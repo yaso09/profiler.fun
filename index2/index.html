@@ -63,7 +63,7 @@
       fetch("../config.json")
         .then(response => response.json())
         .then(data => {
-          document.querySelector("#clerkjs").innerHTML.replace(
+          document.querySelector("#clerkjs").innerHTML = document.querySelector("#clerkjs").innerHTML.replace(
             "pk_test_bWVldC1jYWltYW4tODYuY2xlcmsuYWNjb3VudHMuZGV2JA",
             data.CLERK_PUB_KEY
           );

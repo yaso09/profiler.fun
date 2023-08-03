@@ -343,7 +343,7 @@ const bio = document.querySelector(".bio");
 const pp = document.querySelector(".profile-card");
 
 function controlParam() {
-    if (window.location.href === cleanUrl && getParam("creator-mode") === !"true") {
+    if (window.location.href === cleanUrl) {
         return true;
     } else {
         return false;

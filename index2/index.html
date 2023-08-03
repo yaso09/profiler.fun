@@ -20,8 +20,8 @@
           <div class="post-header">
             <h3>Profillerin</h3>
           </div>
-          <p>Yok mu? ... Yazık kafana!</p>
-          <a href="#">Hayatta olduğunu kanıtla</a>
+          <p id="nullWTF">Yok mu? ... Yazık kafana!</p>
+          <a id="create-profile" href="#">Hayatta olduğunu kanıtla</a>
         </div>
       </div>
     </center>
@@ -109,6 +109,16 @@
         function() {
           if (Clerk.loaded) {
             controlA();
+            if (Clerk.user === null) {
+              document.querySelector("#nullWTF").innerHTML = "Sen hala Profiler üyesi olmadın mı?";
+              document.querySelector("#create-profile").onclick = function() {
+                user();
+              }
+              document.querySelector("#create-profile").innerHTML = "Başla";
+            }
+            else {
+              //Burayı şimdilik geçelim
+            }
           }
         }
       , 1000);

@@ -41,7 +41,9 @@
         <ul>
           <li><a href="#">Ana Sayfa</a></li>
           <li><a href="#">Keşfet</a></li>
-          <li><a id="notifications" href="#">Bildirimler</a></li>
+          <div id="nots">
+            <li><a id="notifications" href="#">Bildirimler</a></li>
+          </div>
           <li><a href="#">Ayarlar</a></li>
           <li id="gift3"><a href="#" id="gift" hidden="false">Yükleniyor</a></li>
         </ul>
@@ -149,7 +151,7 @@
               document.querySelector("#create-profile").innerHTML = "Başla";
               document.querySelector("#your-profiles").hidden = true;
               document.querySelector("nav").innerHTML = 
-                document.querySelector("nav").innerHTML.replace('<li><a id="notifications" href="#">Bildirimler</a></li>', "");
+                document.querySelector("#nots").innerHTML.replace('<li><a id="notifications" href="#">Bildirimler</a></li>', "");
             }
             else {
               document.querySelector("#create-profile").onclick = function() {

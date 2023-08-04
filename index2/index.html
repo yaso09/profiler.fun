@@ -150,8 +150,7 @@
               }
               document.querySelector("#create-profile").innerHTML = "Başla";
               document.querySelector("#your-profiles").hidden = true;
-              document.querySelector("nav").innerHTML = 
-                document.querySelector("#nots").innerHTML.replace('<li><a id="notifications" href="#">Bildirimler</a></li>', "");
+              document.querySelector("#nots").innerHTML = "";
             }
             else {
               document.querySelector("#create-profile").onclick = function() {
